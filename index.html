@@ -4,12 +4,32 @@
       <title></title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/fontawesome.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/style.css">
+      <style>
+         .carousel-image{
+            height: 65vh;
+            display: flex;
+            justify-content: center;
+         }
+         .carousel-image img{
+            max-width: 100%;
+            max-height: 65vh;
+            margin: auto;
+         }
+         #gallery .carousel-image{
+            height: 68vh;
+            display: flex;
+            justify-content: center;
+         }
+         #gallery .carousel-image img{
+            max-width: 100%;
+            max-height: 68vh;
+            margin: auto;
+         }
+      </style>
    </head>
    <body>
       <div class="landing-section"></div>
@@ -60,7 +80,102 @@
                </div>
                <div class="col-sm-4"></div>
             </div>
+            <div class="row">
+               <div class="col-sm-8" style="padding-right: 0px;">
+                  <div class="owl-carousel owl-theme">
+                     <div class="carousel-image">
+                        <img src="images/Banner.png">
+                     </div>
+                     <div class="carousel-image">
+                        <img src="images/Banner.png">
+                     </div>
+                     <div class="carousel-image">
+                        <img src="images/Banner.png">
+                     </div>
+                     <div class="carousel-image">
+                        <img src="images/Banner.png">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-4" style="border: 1px solid grey; height: 65vh; padding: 85px;">
+                  <h6 style="font-weight: bold; font-size: 18px;">Type A <span style="margin-left: 40px;">- 2 BHK</span><br><br>
+                  Carpet Area - 613.15 SQ.FT</h6>
+               </div>
+            </div>
          </div>
       </section>
+
+      <section id="gallery">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-8" style="padding-right: 0px; padding-left: 0px;">
+                  <div class="owl-carousel owl-theme">
+                     <div class="carousel-image">
+                        <img src="images/Banner.png">
+                     </div>
+                     <div class="carousel-image">
+                        <img src="images/Banner.png">
+                     </div>
+                     <div class="carousel-image">
+                        <img src="images/Banner.png">
+                     </div>
+                     <div class="carousel-image">
+                        <img src="images/Banner.png">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-4" style="border: 1px solid grey; height: 68vh; padding: 0px; background-color: #333333">
+                  <div style="border-bottom: 1px solid grey; padding: 55px; padding-bottom: 20px;">
+                     <h6 style="font-weight: bold; font-size: 48px; color: #7f939a">Gallery</h6>
+                     <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                  </div>
+                  <div style="border-bottom: 1px solid grey; padding: 55px; padding-bottom: 20px; padding-top: 20px;">
+                     <p class="text-white">Lorem Ipsum is simply</p>
+                     <p>Dummy text of the printing and text typesetting industry.</p>
+                  </div>
+                  <div class="custom-owl-nav disabled">
+   <button type="button" role="presentation" class="custom-owl-prev">
+      <span aria-label="Previous">‹</span>
+   </button>
+   <button type="button" role="presentation" class="custom-owl-next">
+      <span aria-label="Next">›</span>
+   </button>
+</div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br><br><br>
+      <!--script tags -->
+      <script src="js/jquery.js"></script>
+      <script src="js/popper.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/owl.carousel.js"></script>
+      <script>
+         $('.owl-carousel').owlCarousel({
+            loop: true,
+                      margin: 10,
+                      autoplay: true,
+                      dots: false,
+                      nav: false,
+                      responsiveClass: true,
+                      responsive: {
+                        0: {
+                          items: 1,
+                          nav: true
+                        },
+                        600: {
+                          items: 3,
+                          nav: false
+                        },
+                        1000: {
+                          items: 1,
+                          nav: true,
+                          loop: false,
+                          margin: 20
+                        }
+                      }
+         });
+      </script>
    </body>
 </html>
