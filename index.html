@@ -1,181 +1,453 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
    <head>
-      <title></title>
+      <title>MRG</title>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/bootstrap.css">
-      <link rel="stylesheet" href="css/fontawesome.css">
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/style.css">
-      <style>
-         .carousel-image{
-            height: 65vh;
-            display: flex;
-            justify-content: center;
-         }
-         .carousel-image img{
-            max-width: 100%;
-            max-height: 65vh;
-            margin: auto;
-         }
-         #gallery .carousel-image{
-            height: 68vh;
-            display: flex;
-            justify-content: center;
-         }
-         #gallery .carousel-image img{
-            max-width: 100%;
-            max-height: 68vh;
-            margin: auto;
-         }
-      </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!--- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/customs.css">
+      <!--- customs css -->
+      <link rel="stylesheet" type="text/css" href="css/fancybox.css">
+      <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">-->
+      <!--<link rel="stylesheet" href="css/owl.carousel.min.css">-->
+      <!--- font awesome css -->
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <!--- wow css -->
+      <link rel="stylesheet" type="text/css" href="css/responsive.css">
+      <!--- responsive css -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body>
-      <div class="landing-section"></div>
-      <!-- Start Header Area -->
-      <header class="default-header">
-         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-               <a class="navbar-brand" href="index.php">
-                  <!-- <img src="img/logo.png" alt=""> -->
-               </a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="fa fa-bars"></span>
-               </button>
-               <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-                  <ul class="navbar-nav">
-                     <li type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><a href="#home">Projects</a></li>
-                     <li type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><a href="#">Unit Plan</a></li>
-                     <li type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><a href="#">Amenities</a></li>
-                     <li type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><a href="#">Price List</a></li>
-                     <li type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><a href="#">Gallery</a></li>
-                     <li type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><a href="#">Call <b>+91- 9999 9999</b></a></li>
-                     <li type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><a href="#"></a></li>
-                  </ul>
+      <div class="right-form">
+         <div class="right-img-enquery">ENQUIRE NOW</div>
+      </div>
+      <div class="bottom-form">
+         <form>
+               <div class="row">
+                  <div class="bottom-form-inputfield">
+                     <input type="text" name="name" placeholder="Name" class="form-control" required="">
+                  </div>
+                  <div class="bottom-form-inputfield select-box">
+                     <select class="form-control">
+                        <option value="volvo">India (+91)</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                     </select>
+                  </div>
+                  <div class="bottom-form-inputfield contact-field">
+                     <input type="email" name="phone" placeholder="Contact No" class="form-control">
+                  </div>
+                  <div class="bottom-form-inputfield">
+                     <input type="text" name="message" placeholder="Message" class="form-control">
+                  </div>
+                  <div class="bottom-form-inputfield">
+                     <button type="submit" class="btn btn-primary" name="submitv"> Submit </button>
+                  </div>
                </div>
-            </div>
-         </nav>
-      </header>
-      <section class="section1">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-sm-5">
-                  <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+            </form>
+      </div>
+      
+      <div id="mySidenav" class="sidenav d-block d-md-none">
+         <div class="container pyborbt">
+            <div class="row px-0">
+               <div class="col-6 px-0 ">
+                  <a href="index.php"> <img src="images/logo.png" style="width: 130px;"></a> 
                </div>
-               <div class="col-sm-7">
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, & a search for will many web sites still in their infancy.</p>
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+               <div class="col-6 text-right px-0">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                </div>
             </div>
          </div>
-      </section>
-      <section class="section2">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-sm-8">
-                  <h2>Floor Plans</h2>
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here</p>
-               </div>
-               <div class="col-sm-4"></div>
+         <div class="container">
+            <div class="mobilemenu-link" id="menulink-humbur"> 
+               <a href="#project" class="menu_linkm">Project Brief</a>
+               <a href="#unit" class="menu_linkm ">Unit Plan</a>
+               <a href="#gallery" class="menu_linkm">Gallery</a>
+               <a href="#amenities" class="menu_linkm">Amenities</a>
+               <a href="#price-list" class="menu_linkm">Price List</a>
+               <a href="#contact" class="menu_linkm">Contact Us</a>
             </div>
+         </div>
+      </div>
+      <!--mobile menu -->
+      <div class="mobile_menu  position-fixed d-block d-md-none">
+         <div class="container px-0 ">
             <div class="row">
-               <div class="col-sm-8" style="padding-right: 0px;">
-                  <div class="owl-carousel owl-theme">
-                     <div class="carousel-image">
-                        <img src="images/Banner.png">
-                     </div>
-                     <div class="carousel-image">
-                        <img src="images/Banner.png">
-                     </div>
-                     <div class="carousel-image">
-                        <img src="images/Banner.png">
-                     </div>
-                     <div class="carousel-image">
-                        <img src="images/Banner.png">
-                     </div>
-                  </div>
+               <div class="col-6">
+                  <a href="index.php"> <img src="images/logo.png" style="width:130px;"/></a> 
                </div>
-               <div class="col-sm-4" style="border: 1px solid grey; height: 65vh; padding: 85px;">
-                  <h6 style="font-weight: bold; font-size: 18px;">Type A <span style="margin-left: 40px;">- 2 BHK</span><br><br>
-                  Carpet Area - 613.15 SQ.FT</h6>
+               <div class="col-6 text-right">
+                  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                </div>
             </div>
          </div>
-      </section>
-
-      <section id="gallery">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-sm-8" style="padding-right: 0px; padding-left: 0px;">
-                  <div class="owl-carousel owl-theme">
-                     <div class="carousel-image">
-                        <img src="images/Banner.png">
-                     </div>
-                     <div class="carousel-image">
-                        <img src="images/Banner.png">
-                     </div>
-                     <div class="carousel-image">
-                        <img src="images/Banner.png">
-                     </div>
-                     <div class="carousel-image">
-                        <img src="images/Banner.png">
+      </div>
+      <!--- Desktop menu -->
+      <nav class="navbar navbar-expand-lg d-none d-md-block position-fixed w-100 p-0 immenu-header ">
+         <div class="container">
+            <div class="line-new">
+               <div class="row">
+                  <div class="col-11 col-lg-3 pd-left">
+                     <a class="navbar-brand" href="index.php"> <img src="images/logo.png" class="navbar-brand-image"/> </a>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars barsicons" id="barsicon"></i>
+                  </button>
+                  <!--<div class="col-3">-->
+                  <!--</div>-->
+                  <div class="col-lg-9 pd-right">
+                     <div class="collapse navbar-collapse  pull-right" id="navbarNav">
+                        <ul class="navbar-nav header-menu " id="myDIV">
+                           <li class="nav-item hhmenu-link ">
+                              <a class="nav-link active"   href="#project">Project Brief <span class="sr-only">(current)</span></a>
+                           </li>
+                           <li class="nav-item hhmenu-link">
+                              <a class="nav-link "  href="#unit">Unit Plan</a>
+                           </li>
+                           <li class="nav-item hhmenu-link">
+                              <a class="nav-link "  href="#gallery">Gallery</a>
+                           </li>
+                           <li class="nav-item hhmenu-link">
+                              <a class="nav-link "   href="#amenities">Amenities</a>
+                           </li>
+                           <li class="nav-item hhmenu-link">
+                              <a class="nav-link "  href="#price-list">Price List</a>
+                           </li>
+                           <li class="nav-item hhmenu-link">
+                              <a class="nav-link "  href="#contact">Contact Us</a>
+                           </li>
+                        </ul>
                      </div>
                   </div>
-               </div>
-               <div class="col-sm-4" style="border: 1px solid grey; height: 68vh; padding: 0px; background-color: #333333">
-                  <div style="border-bottom: 1px solid grey; padding: 55px; padding-bottom: 20px;">
-                     <h6 style="font-weight: bold; font-size: 48px; color: #7f939a">Gallery</h6>
-                     <p>It is a long established fact that a reader will be distracted by the readable content.</p>
-                  </div>
-                  <div style="border-bottom: 1px solid grey; padding: 55px; padding-bottom: 20px; padding-top: 20px;">
-                     <p class="text-white">Lorem Ipsum is simply</p>
-                     <p>Dummy text of the printing and text typesetting industry.</p>
-                  </div>
-                  <div class="custom-owl-nav disabled">
-   <button type="button" role="presentation" class="custom-owl-prev">
-      <span aria-label="Previous">‹</span>
-   </button>
-   <button type="button" role="presentation" class="custom-owl-next">
-      <span aria-label="Next">›</span>
-   </button>
-</div>
                </div>
             </div>
          </div>
-      </section>
-      <br><br><br>
-      <!--script tags -->
-      <script src="js/jquery.js"></script>
-      <script src="js/popper.js"></script>
-      <script src="js/bootstrap.js"></script>
+      </nav>
+      <!-- end nav -->
+      <div class="imhome-banner ">
+         <div class="banner-slide">
+            <div class="banslide-items"></div>
+         </div>
+      </div>
+      <!--- end banner section --->
+      <!-- section 1 -->
+      <div class="container-fluid greybg section1 pd20 pt60" id="project">
+         <div class="row">
+            <div class="col-lg-6">
+               <h2 class="section-headings sm2">Check out MRG Skyline, the first affordable housing project in Gurgaon with confirmed parking space</h2>
+            </div>
+            <div class="col-lg-6">
+               <p>Are you fancying the idea of purchasing an affordable home in Gurgaon? Well, the city promises
+                  a dynamic lifestyle, and most of the projects in Gurgaon come in the luxury category. However,
+                  here's <strong> MRG Skyline </strong> a residential project developed in Sector 106 of Gurgaon, where property
+                  owners can buy affordable homes.
+               </p>
+               <p>These apartments come under the affordable housing sector, where you need to shell out just 1%
+                  GST. Besides, the prices of affordable properties in this project would come within your budget.
+                  The developers, MRG World, have priced these homes between INR 24.25 to 26.50 lakhs. One
+                  can choose from different configurations of 2 and 3 BHK apartments, available in this project.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid section1 pd20">
+         <h2 class="section-headings">What’s special about MRG Skyline?</h2>
+         <div class="row">
+            <p>Most of the property owner’s lookout for a dedicated car parking space in the complex where
+               they purchase the apartment. However, when you check out affordable homes, it becomes
+               difficult to find such a project. Although the affordable home developers integrate all the
+               necessary features to ensure that the residents would remain comfortable, car parking space
+               continues to be an issue.
+            </p>
+            <p>However, at <strong>MRG World Skyline</strong>, the property owners can get a confirmed car parking space
+               when they book the apartments. This implies that in case you own a vehicle, you need not look
+               for a safe space to park it outside the complex.
+            </p>
+         </div>
+      </div>
+      <div class="container-fluid greybg section1 pd20">
+         <h2 class="section-headings">Other specifications you might be interested to know</h2>
+         <div class="row">
+            <p>This is a massive residential project, developed across 9,353 acres. A lot of green and open
+               spaces are available for the residents around these homes. The estate houses as many as 1,315
+               apartments, all of which come within the mentioned price range.
+            </p>
+            <p>Therefore, the residents enjoy the freedom to choose their desired configuration from different
+               available options. Regardless of the type of home you choose, you would enjoy the basic features
+               and green spaces around.
+            </p>
+            <p>The developers have also incorporated a strategic floor plan in this complex. This ensures that
+               most of the common spaces would be available for the residents. With optimal security features
+               and CCTV installations in the common areas, the residents here would remain safe and secure.
+            </p>
+         </div>
+      </div>
+      <!--section 2 -->
+      <div class="container-fluid whitebg section1 pd20" id="unit">
+         <div class="row">
+            <div class="col-lg-8">
+               <h2 class="section-headings">Floor Plans</h2>
+               <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here</p>
+            </div>
+            <div class="col-lg-4"></div>
+         </div>
+         <div class="row floor-plans-carousel">
+            <div class="col-md-8 col-lg-8">
+               <div id="floor-plan-slide" class=" slide">
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="images/Floor-Plan-1.png" class="w-100">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="images/Floor-Plan-2.png" class="w-100">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="images/Floor-Plan-1.png" class="w-100">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+               <h6>Type A <span style="margin-left: 40px;">- 2 BHK</span><br><br>
+                  Carpet Area - 613.15 SQ.FT
+               </h6>
+               <!-- Indicators -->
+               <ul class="carousel-indicators">
+                  <li data-target="#floor-plan-slide" data-slide-to="0" class="carousel-target active"></li>
+                  <li data-target="#floor-plan-slide" data-slide-to="1" class="carousel-target"></li>
+                  <li data-target="#floor-plan-slide" data-slide-to="2" class="carousel-target"></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--section 3 -->
+      <div class="container-fluid" id="gallery">
+         <div class="row">
+            <div class="col-lg-8">
+               <div id="gallery-slide" class="carousel slide" data-ride="carousel">
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="images/gallery.jpg" class="w-100">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="images/gallery.jpg" class="w-100">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="images/gallery.jpg" class="w-100">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="gallery-text-section1">
+                  <h6>Gallery</h6>
+                  <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+               </div>
+               <div class="gallery-text-section2">
+                  <p class="text-white">Lorem Ipsum is simply</p>
+                  <p>Dummy text of the printing and text typesetting industry.</p>
+               </div>
+               <!-- Left and right controls -->
+               <div class="gallery-text-section3">
+                  <a href="#gallery-slide" data-slide="prev">
+                  <span><i class="fa fa-long-arrow-left"></i></span>
+                  </a>
+                  <a href="#gallery-slide" data-slide="next">
+                  <span><i class="fa fa-long-arrow-right"></i></span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid section1 pd20">
+         <h2 class="section-headings">The proximity to Delhi and commercial areas</h2>
+         <div class="row">
+            <p>In the past, transportation happened to be an issue for residents living in Gurgaon. However, with
+               the Dwarka Expressway coming up, this problem has been sorted out. The residents at <strong>MRG
+               Skyline Sector 106 Gurgaon </strong> can avail of the seamless transportation system in the city to reach
+               their commercial destinations and offices.
+            </p>
+            <p>Even the airport and railways stations can be accessed quickly from these homes. For residents,
+               it is crucial to ensure the availability of sophisticated education and healthcare facilities around the complex. Gurgaon doesn’t disappoint the property buyers in this respect too. A number of
+               reputed schools, colleges and hospitals are located in close proximity to Skyline MRG affordable
+               residential complex. Evidently, the residents would be at ease while navigating through the city
+               when they move to this complex.
+            </p>
+            <p>In case you want to book an apartment in this estate, this would be the right time to make the
+               investment.
+            </p>
+         </div>
+      </div>
+      <!-- section 4 -->
+      <div class="container-fluid greybg section1 pd20" id="amenities">
+         <h2 class="section-headings">Amenities</h2>
+         <div class="row">
+            <div class="col-6 col-lg-3">
+               <img src="images/Car_parking.svg">
+               <h5>Car Parking</h5>
+            </div>
+            <div class="col-6 col-lg-3">
+               <img src="images/running-man.svg">
+               <h5>Jogging Track</h5>
+            </div>
+            <div class="col-6 col-lg-3">
+               <img src="images/Food_Court.svg">
+               <h5>Multipurpose Central Lawn</h5>
+            </div>
+            <div class="col-6 col-lg-3">
+               <img src="images/Party_lawn.svg">
+               <h5>Community Party Lawn</h5>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-6 col-lg-3">
+               <img src="images/Kids_Play_Area.svg">
+               <h5>Kid's Play Area</h5>
+            </div>
+            <div class="col-6 col-lg-3">
+               <img src="images/Gym_area.svg">
+               <h5>Open GYM</h5>
+            </div>
+            <div class="col-6 col-lg-3">
+               <img src="images/Entrance_gate.svg">
+               <h5>Grand Entrance</h5>
+            </div>
+            <div class="col-6 col-lg-3">
+               <img src="images/Retail_shop.svg">
+               <h5>Community Retail</h5>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-6 col-lg-3">
+               <img src="images/badminton-court.svg">
+               <h5>Badminton Court</h5>
+            </div>
+            <div class="col-6 col-lg-3">
+               <img src="images/Park_Area.svg">
+               <h5>Landscaped Garden</h5>
+            </div>
+            <div class="col-6 col-lg-3">
+               <img src="images/meditation_yoga.svg">
+               <h5>Yoga/Meditation Area</h5>
+            </div>
+            <div class="col-6 col-lg-3">
+               <img src="images/old-man.svg">
+               <h5>Senior Citizen Alcove</h5>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-6 col-lg-3">
+               <img src="images/volleyball.svg">
+               <h5>VolleyBall Court</h5>
+            </div>
+            <div class="col-6 col-lg-3">
+               <img src="images/Pool.svg">
+               <h5>Swimming Pool</h5>
+            </div>
+         </div>
+      </div>
+      <!-- section 5 -->
+      <div class="container-fluid" id="price-list">
+         <h2 class="section-headings text-center">Price List</h2>
+         <div class="table-responsive">
+            <table class="table table-bordered">
+               <thead>
+                  <tr>
+                     <th>Unit Type</th>
+                     <th>No of Units</th>
+                     <th>Carpet Area (in Sq. Mtr.)</th>
+                     <th>Balcony Area (in Sq. Mtr.)</th>
+                     <th>Carpet Area (in Sq. Ft.)</th>
+                     <th>Balcony Area (in Sq.Ft.)</th>
+                     <th>Total Cost</th>
+                     <th>5% Application Money</th>
+                     <th>Allotment Money (20% + 12.5%)</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>2BHK-A</td>
+                     <td>83</td>
+                     <td>56..376</td>
+                     <td>8.57</td>
+                     <td>606.826</td>
+                     <td>92.247</td>
+                     <td>24.73428</td>
+                     <td>123671</td>
+                     <td>803864</td>
+                  </tr>
+                  <tr>
+                     <td>2BHK-A</td>
+                     <td>83</td>
+                     <td>56..376</td>
+                     <td>8.57</td>
+                     <td>606.826</td>
+                     <td>92.247</td>
+                     <td>24.73428</td>
+                     <td>123671</td>
+                     <td>803864</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <!-- section 6 -->
+      <div class="container-fluid" id="contact">
+         <div class="row">
+            <div class="col-lg-6 form">
+               <h4 class="section-headings">Get In Touch</h4>
+               <form action="#">
+                  <div class="row form-row">
+                     <div class="col-md-6 col-lg-6 input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Name</label>
+                     </div>
+                     <div class="col-md-6 col-lg-6 input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Email</label>
+                     </div>
+                  </div>
+                  <div class="row form-row">
+                     <div class="col-md-6 col-lg-6 input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Phone Number</label>
+                     </div>
+                     <div class="col-md-6 col-lg-6 input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Address</label>
+                     </div>
+                  </div>
+                  <div class="row form-row">
+                     <div class="col-md-12 col-lg-12 input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Message</label>
+                     </div>
+                  </div>
+                  <div class="submit-button">
+                     <button class="btn">SUBMIT</button>
+                  </div>
+               </form>
+            </div>
+            <div class="col-lg-6 map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.361858272997!2d77.10290241482474!3d28.438506299587317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19bebe5a8f49%3A0xe6b04e4c3c3c42a6!2sMRG%20WORLD%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1575898390951!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/customs.js"></script>
+      <script src="js/fancybox.js"></script>
       <script src="js/owl.carousel.js"></script>
-      <script>
-         $('.owl-carousel').owlCarousel({
-            loop: true,
-                      margin: 10,
-                      autoplay: true,
-                      dots: false,
-                      nav: false,
-                      responsiveClass: true,
-                      responsive: {
-                        0: {
-                          items: 1,
-                          nav: true
-                        },
-                        600: {
-                          items: 3,
-                          nav: false
-                        },
-                        1000: {
-                          items: 1,
-                          nav: true,
-                          loop: false,
-                          margin: 20
-                        }
-                      }
-         });
-      </script>
+      <script src="js/main.js"></script>
    </body>
 </html>
