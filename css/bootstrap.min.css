@@ -173,10 +173,10 @@ a {
 	background-color: transparent
 }
 
-a:hover {
-	color: #0056b3;
-	text-decoration: underline
-}
+/*a:hover {*/
+/*	color: #0056b3;*/
+/*	text-decoration: underline*/
+/*}*/
 
 a:not([href]):not([class]) {
 	color: inherit;
@@ -6918,18 +6918,22 @@ a.close.disabled {
 }
 
 .carousel-indicators {
-	position: absolute;
+	/*position: absolute;*/
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 15;
+	z-index: 99;
+	margin-top: -50px;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: center;
 	justify-content: center;
 	padding-left: 0;
-	margin-right: 15%;
-	margin-left: 15%;
+	/*margin-right: 15%;*/
+	/*margin-left: 15%;*/
+	max-width: 380px;
+     margin-right: 0;
+     margin-left: auto;
 	list-style: none
 }
 
